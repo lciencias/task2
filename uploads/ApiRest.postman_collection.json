@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "273c6c0f-fdef-4aad-b3ba-eb6df94bc865",
+		"name": "ApiRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Authorizations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{gateway}}authorizations",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{gateway}}authorizations"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Authorizations By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{gateway}}authorizations/40",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{gateway}}authorizations",
+					"path": [
+						"40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Create Authorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : \"33000\",\r\n    \"description\" : \"Autorizacion Banamex\",\r\n    \"estatus\" : \"En Proceso\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{gateway}}authorizations",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{gateway}}authorizations"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Update Authorization",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : \"150000\",\r\n    \"description\" : \"Actualiza nueva autorizacion\",\r\n    \"estatus\" : \"Autorizada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{gateway}}authorizations/4",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{gateway}}authorizations",
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Authorization",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : \"150000\",\r\n    \"description\" : \"Actualiza nueva autorizacion\",\r\n    \"estatus\" : \"Autorizada\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{gateway}}authorizations/a",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{gateway}}authorizations",
+					"path": [
+						"a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
